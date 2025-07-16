@@ -1,5 +1,5 @@
 # Prompt: username + current directory + git info
-PROMPT='%{$fg[magenta]%}%n@%m %{$fg[cyan]%}%~%{$fg[yellow]%}$(git_prompt_info)%{$reset_color%} $ '
+PROMPT='%{$fg[yellow]%}[%n@%m] %{$fg[magenta]%}%~%{$fg[yellow]%}$(git_prompt_info)%{$reset_color%} $ '
 
 # Git prompt format
 ZSH_THEME_GIT_PROMPT_PREFIX=" git:"
