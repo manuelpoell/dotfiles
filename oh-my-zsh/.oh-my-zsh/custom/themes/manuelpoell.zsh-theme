@@ -1,5 +1,5 @@
 # Prompt: username + current directory + git info
-PROMPT='%{$fg[yellow]%}[%n@%m] %{$fg[magenta]%}%~%{$fg[yellow]%}$(git_prompt_info)%{$reset_color%} $ '
+PROMPT='%{$fg[cyan]%}[%n@%m] %{$fg[blue]%}%~%{$fg[cyan]%}$(git_prompt_info)%{$reset_color%} $ '
 
 # Git prompt format
 ZSH_THEME_GIT_PROMPT_PREFIX=" git:"
@@ -31,9 +31,9 @@ precmd() {
   fi
 
   if [[ $exit_code -ne 0 ]]; then
-    RPROMPT="%{$fg[red]%}[$exit_code] %{$fg[magenta]%}[$duration_display]%{$reset_color%}"
+    RPROMPT="%{$fg[red]%}[$exit_code] %{$fg[blue]%}[$duration_display]%{$reset_color%}"
   elif [[ -n "$duration_display" ]]; then
-    RPROMPT="%{$fg[magenta]%}[$duration_display]%{$reset_color%}"
+    RPROMPT="%{$fg[blue]%}[$duration_display]%{$reset_color%}"
   else
     RPROMPT=""
   fi
